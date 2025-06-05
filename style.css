@@ -1,0 +1,414 @@
+
+
+/* Topo */
+.roof {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .roof-left,
+  .roof-right {
+    width: 10%;
+    height: 3rem;
+    background: rgb(53, 53, 53);
+  }
+  
+  .roof-left {
+    transform: skewX(-25deg);
+  }
+  
+  .roof-right {
+    transform: skewX(25deg);
+  }
+  
+  /* Geral */
+  
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  p {
+    color: rgb(1, 2, 26);
+  }
+  
+  /* Transição */
+  
+  a,
+  .btn {
+    transition: all 300ms ease;
+  }
+  
+  /* Navegação Desktop */
+  
+  nav,
+  .nav-links {
+    display: flex;
+  }
+  
+  nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+  }
+  
+  .nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+  }
+  
+  a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+  }
+  
+  .logo {
+    font-size: 2rem;
+  }
+  
+  .logo:hover {
+    cursor: default;
+  }
+  
+  /* Ícones sociais */
+.icon {
+    width: 50px; 
+    cursor: pointer;
+  }
+  
+  /* Ícones de contato */
+  .contact-icon {
+    width: 50px; 
+    cursor: pointer;
+  }
+  
+
+  /* Menu Hamburger */
+  
+  #hamburger-nav {
+    display: none;
+  }
+  
+  .hamburger-menu {
+    position: relative;
+    display: inline-block;
+  }
+
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+  }
+  
+  .hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+  }
+  
+  .menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  }
+  
+  .menu-links a {
+    padding: 0.5rem 2rem;
+    display: block;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .menu-links a:hover {
+    background-color: rgb(240, 240, 240);
+  }
+  
+  .menu-links.show {
+    display: flex;
+  }
+  
+  /* Secção do Perfil */
+  
+  #profile {
+    display: flex;
+    justify-content: center;
+    height: 85vh;
+  }
+  
+  .section__pic-container {
+    display: flex-start;
+    align-items: center;
+    transform: scale(0.45); /* Reduz o tamanho do contêiner e do conteúdo */
+    width: 45%;  /* Define a largura do contêiner */
+}
+
+.section__pic-container img {
+    width: 120%; /* A imagem ocupa 100% da largura do contêiner */
+    border-radius: 70%; /* Torna a borda da imagem redonda */
+    border: 10px solid #fdfcfc; /* Adiciona uma borda preta de 5px */
+    object-fit: cover; /* Garante que a imagem se ajuste bem dentro da borda redonda */
+}
+
+
+  .section__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .section__text__p1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .title {
+    font-size: 4rem;
+    font-weight: bolder;
+    color: black;
+  }
+  
+  .section__text__p2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .btn-container {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    padding: 0.8rem 2rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .btn-color-1 {
+    background-color: rgb(126, 133, 190);
+    border: solid 1px transparent;
+    color: aliceblue;
+    
+  }
+  
+  .btn-color-2 {
+    background-color: white;
+    border: solid 1px rgb(180, 180, 180);
+    
+  }
+  
+  .btn-color-1:hover {
+    background-color: rgb(104, 118, 120);
+    color: white;
+  }
+  
+  .btn-color-2:hover {
+    background-color: grey;
+    color: white;
+  }
+  
+  /* Seção de Projetos */
+  
+  #projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 6rem 2rem;
+    text-align: center;
+  }
+  
+  .experience-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .about-containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 350px;
+  }
+  
+  .color-container {
+    background-color: rgb(241, 241, 241);
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+  }
+  
+  .article-container {
+    max-height: 150px;
+    overflow: hidden;
+  }
+  
+  .project-title {
+    text-align: center;
+  }
+  
+  .project-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .project-img {
+    width: 100%;
+  }
+  
+  /* Seção de Contato */
+  
+  #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 6rem 2rem;
+    text-align: center;
+  }
+  
+  .contact-info-upper-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .contact-info-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .contact-icon {
+    width: 50px;
+  }
+  
+  /* Footer */
+  
+  footer {
+    text-align: center;
+    background-color: rgba(1, 6, 53, 0.795);
+    color: white;
+    padding: 2rem 1rem;
+  }
+  
+  .nav-links-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsividade */
+  
+  @media screen and (max-width: 768px) {
+    #desktop-nav {
+      display: none;
+    }
+    .section__pic-container{
+      display: none;
+    }
+    #hamburger-nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+  
+    .roof-left,
+    .roof-right {
+      width: 15%;
+      height: 2rem;
+    }
+  
+    .title {
+      font-size: 3rem;
+    }
+  
+    .experience-details-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .contact-info-upper-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .btn-container {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  /* Remover margens e padding entre as seções */
+section {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Remover margens dos títulos e parágrafos dentro das seções */
+  section h1,
+  section p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Ajuste específico para seções que possuem mais espaço */
+  #about,
+  #projects {
+    padding-top: 1vh; /* Para manter um pouco de espaço no topo */
+    padding-bottom: 1vh; /* Para manter um pouco de espaço na parte inferior */
+  }
+  
+  
